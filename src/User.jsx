@@ -1,6 +1,6 @@
 import { Fragment } from "react";
-import EditButton from "./Components/EditButton";
-import DeleteButton from "./Components/DeleteButton";
+
+import { ChangeButton, ViewButton, DeleteButton } from "./Components/Buttons";
 
 function User() {
   return (
@@ -15,7 +15,8 @@ function User() {
       >
         <img src="https://picsum.photos/200/200" alt="" />
         <p style={{ textAlign: "center" }}>Ram</p>
-        <EditButton />
+        <ChangeButton />
+        <ViewButton />
         <DeleteButton />
       </div>
     </>

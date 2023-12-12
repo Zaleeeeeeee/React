@@ -1,5 +1,4 @@
-import EditButton from "./Components/EditButton";
-import DeleteButton from "./Components/DeleteButton";
+import { ChangeButton, ViewButton, DeleteButton } from "./Components/Buttons";
 
 function Course(props) {
   return (
@@ -11,7 +10,7 @@ function Course(props) {
         molestiae?
       </p>
 
-      <EditButton />
+      <ChangeButton />
       <DeleteButton />
     </div>
   );

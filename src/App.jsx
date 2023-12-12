@@ -1,14 +1,21 @@
 import Course from "./Course";
 import User from "./User";
 import Image from "./assets/images/w.jpg";
-import EditButton from "./Components/EditButton";
-import DeleteButton from "./Components/DeleteButton";
+
+import { ChangeButton, DeleteButton, ViewButton } from "./Components/Buttons";
 
 let usersStyle = {
   display: "flex",
-  justifyContent: "space-between",
+  justifyContent: "center",
   alignItems: "center",
+  gap: "1rem",
 };
+
+let users = [
+  { name: "Ram", email: "ram@ram.com" },
+  { name: "Ram2", email: "ram@ram.com" },
+  { name: "Ram3", email: "ram@ram.com" },
+];
 
 function App() {
   return (
@@ -25,7 +32,6 @@ function App() {
         <User />
         <User />
         <User />
-        <User />
       </div>
       <table>
         <tr>
@@ -38,7 +44,7 @@ function App() {
           <td>ram</td>
           <td>ram@ram.com</td>
           <td>
-            <EditButton />
+            <ChangeButton />
             <DeleteButton />
           </td>
         </tr>
