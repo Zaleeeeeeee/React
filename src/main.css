@@ -1,9 +1,5 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities;
- */
-body {
-  background-color: antiquewhite;
+thead {
+  background-color: greenyellow;
 }
 
 .card {
@@ -35,4 +31,18 @@ th,
 td {
   border: 3px solid black;
   padding: 1rem;
+}
+
+.bg-green {
+  background-color: green;
+  color: white;
+}
+
+.bg-red {
+  background-color: red;
+  color: #fff;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }

@@ -2,6 +2,8 @@ import Course from "./Course";
 import User from "./User";
 import Image from "./assets/images/w.jpg";
 import { Fragment } from "react";
+import { Counter } from "./Components/Counter";
+import { GoogleTabs } from "./GoogleTabs";
 
 import { ChangeButton, DeleteButton, ViewButton } from "./Components/Buttons";
 import Todos from "./Todos";
@@ -24,6 +26,12 @@ let users = [
 let courses = ["react", "javascript", "css"];
 
 function App() {
+  return (
+    <>
+      <GoogleTabs />
+      {/* <Counter />; */}
+    </>
+  );
   return (
     <>
       <Todos />
